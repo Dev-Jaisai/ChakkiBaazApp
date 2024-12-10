@@ -36,6 +36,6 @@ public class UserController {
     public String registerUser(@ModelAttribute User user) {
         System.out.println("Registering user: " + user);
         userService.saveUser(user);
-        return "redirect:/users";
+        return "order-placement";
     }
 }
